@@ -1,0 +1,683 @@
+EESchema Schematic File Version 2
+LIBS:PIDDEF-rescue
+LIBS:Power_Management
+LIBS:interface
+LIBS:display
+LIBS:dc-dc
+LIBS:power
+LIBS:Poncho_Esqueleto
+LIBS:Misc_Poncho_Grande
+LIBS:conn
+LIBS:regul
+LIBS:device
+LIBS:tme_1205s
+LIBS:analog_devices
+LIBS:texas
+LIBS:stm32
+LIBS:stm8
+LIBS:onsemi
+LIBS:motorola
+LIBS:contrib
+LIBS:w_analog
+LIBS:w_connectors
+LIBS:module_adafruits
+LIBS:7805correg
+LIBS:PIDDEF-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_02X08 P4
+U 1 1 56C5DF12
+P 3550 3350
+F 0 "P4" H 3550 3800 50  0000 C CNN
+F 1 "CONN_02X08" V 3550 3350 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x08" H 3550 2150 50  0001 C CNN
+F 3 "" H 3550 2150 50  0000 C CNN
+	1    3550 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Module_LevelShifter Module_Adafruit1
+U 1 1 56C5EAB2
+P 6200 3350
+F 0 "Module_Adafruit1" H 6200 2650 60  0000 C CNN
+F 1 "Module_LevelShifter" H 6200 4050 60  0000 C CNN
+F 2 "PIDDEF:Adafruit-LevelShifter-TXB0108" H 6200 3350 60  0001 C CNN
+F 3 "" H 6200 3350 60  0000 C CNN
+	1    6200 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR047
+U 1 1 56C5F856
+P 6950 3900
+F 0 "#PWR047" H 6950 3650 50  0001 C CNN
+F 1 "GND" H 6950 3750 50  0000 C CNN
+F 2 "" H 6950 3900 50  0000 C CNN
+F 3 "" H 6950 3900 50  0000 C CNN
+	1    6950 3900
+	1    0    0    -1  
+$EndComp
+Text HLabel 1250 1050 0    60   Input ~ 0
++5V
+Text HLabel 1250 1150 0    60   Input ~ 0
++3.3V
+Wire Wire Line
+	1250 1050 1450 1050
+Wire Wire Line
+	1250 1150 1450 1150
+Text Label 1450 1050 0    60   ~ 0
++5bV
+Text Label 1450 1150 0    60   ~ 0
++3.3V
+Wire Wire Line
+	5550 2900 5450 2900
+Wire Wire Line
+	5450 2900 5450 2700
+Wire Wire Line
+	6850 2900 6950 2900
+Wire Wire Line
+	6950 2900 6950 2700
+Text Label 5450 2700 0    60   ~ 0
++3.3V
+Wire Wire Line
+	6950 3800 6950 3900
+Wire Wire Line
+	6950 3800 6850 3800
+Wire Wire Line
+	3800 3700 3900 3700
+Wire Wire Line
+	3900 3700 3900 3800
+Wire Wire Line
+	3300 3700 3200 3700
+Wire Wire Line
+	3200 3700 3200 3800
+Wire Wire Line
+	3800 3000 3900 3000
+Wire Wire Line
+	3900 3000 3900 2800
+Wire Wire Line
+	2500 3000 3300 3000
+Wire Wire Line
+	3200 3000 3200 2800
+Wire Wire Line
+	3800 3100 3900 3100
+Wire Wire Line
+	3800 3200 3900 3200
+Wire Wire Line
+	3800 3300 3900 3300
+Wire Wire Line
+	3800 3400 3900 3400
+Wire Wire Line
+	3800 3500 3900 3500
+Wire Wire Line
+	3800 3600 3900 3600
+Wire Wire Line
+	3300 3600 3200 3600
+Wire Wire Line
+	3200 3500 3300 3500
+Wire Wire Line
+	3300 3400 3200 3400
+Wire Wire Line
+	3300 3300 3200 3300
+Wire Wire Line
+	3300 3200 3200 3200
+Wire Wire Line
+	3300 3100 3200 3100
+Text Label 3900 3100 0    60   ~ 0
+LCD-RS-1
+Text Label 3900 3200 0    60   ~ 0
+LCD-EN-1
+Text Label 3900 3300 0    60   ~ 0
+LCD1-1
+Text Label 3900 3400 0    60   ~ 0
+LCD2-1
+Text Label 3900 3500 0    60   ~ 0
+LCD3-1
+Text Label 3900 3600 0    60   ~ 0
+LCD4-1
+$Comp
+L GND #PWR048
+U 1 1 56C5FFDB
+P 3900 3800
+F 0 "#PWR048" H 3900 3550 50  0001 C CNN
+F 1 "GND" H 3900 3650 50  0000 C CNN
+F 2 "" H 3900 3800 50  0000 C CNN
+F 3 "" H 3900 3800 50  0000 C CNN
+	1    3900 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR049
+U 1 1 56C5FFEC
+P 3200 3800
+F 0 "#PWR049" H 3200 3550 50  0001 C CNN
+F 1 "GND" H 3200 3650 50  0000 C CNN
+F 2 "" H 3200 3800 50  0000 C CNN
+F 3 "" H 3200 3800 50  0000 C CNN
+	1    3200 3800
+	1    0    0    -1  
+$EndComp
+Text Label 3200 3100 2    60   ~ 0
+LCD-RS-1
+Text Label 3200 3200 2    60   ~ 0
+LCD-EN-1
+Text Label 3200 3300 2    60   ~ 0
+LCD1-1
+Text Label 3200 3400 2    60   ~ 0
+LCD2-1
+Text Label 3200 3500 2    60   ~ 0
+LCD3-1
+Text Label 3200 3600 2    60   ~ 0
+LCD4-1
+Wire Wire Line
+	6950 3000 6850 3000
+Wire Wire Line
+	6950 3100 6850 3100
+Wire Wire Line
+	6950 3200 6850 3200
+Wire Wire Line
+	6950 3300 6850 3300
+Text Label 6950 3000 0    60   ~ 0
+LCD-RS-1
+Text Label 6950 3100 0    60   ~ 0
+LCD-EN-1
+Text Label 6950 3200 0    60   ~ 0
+LCD1-1
+Text Label 6950 3300 0    60   ~ 0
+LCD2-1
+Wire Wire Line
+	6850 3600 6950 3600
+Wire Wire Line
+	6850 3700 6950 3700
+Text Label 6950 3600 0    60   ~ 0
+PWM1out-1
+Text Label 6950 3700 0    60   ~ 0
+PWM2out-1
+Wire Wire Line
+	5550 3800 5450 3800
+Wire Wire Line
+	5550 3700 5450 3700
+Wire Wire Line
+	5550 3600 5450 3600
+Wire Wire Line
+	5550 3500 5450 3500
+Wire Wire Line
+	5550 3400 5450 3400
+Wire Wire Line
+	5550 3300 5450 3300
+Wire Wire Line
+	5550 3200 5450 3200
+Wire Wire Line
+	5550 3100 5450 3100
+Wire Wire Line
+	5550 3000 5450 3000
+Text Label 5450 3950 2    60   ~ 0
++3.3V
+Wire Wire Line
+	5450 3800 5450 3950
+Text Label 5450 3600 2    60   ~ 0
+PWM1in
+Text Label 5450 3700 2    60   ~ 0
+PWM2in
+Text Label 5450 3000 2    60   ~ 0
+lcd-rs
+Text Label 5450 3100 2    60   ~ 0
+lcd-en
+Text Label 5450 3200 2    60   ~ 0
+lcd1
+Text Label 5450 3300 2    60   ~ 0
+lcd2
+Text Label 5450 3400 2    60   ~ 0
+lcd3
+Text Label 5450 3500 2    60   ~ 0
+lcd4
+Wire Wire Line
+	6850 3400 6950 3400
+Wire Wire Line
+	6950 3500 6850 3500
+Text Label 6950 3400 0    60   ~ 0
+LCD3-1
+Text Label 6950 3500 0    60   ~ 0
+LCD4-1
+$Comp
+L HEADER_3 J7
+U 1 1 56C60872
+P 1400 4800
+F 0 "J7" H 1400 5000 60  0000 C CNN
+F 1 "HEADER_3" H 1400 4600 60  0000 C CNN
+F 2 "Sockets_WAGO734:WAGO_734_3pin_Straight_RuggedPads" H 1400 4800 60  0001 C CNN
+F 3 "" H 1400 4800 60  0000 C CNN
+	1    1400 4800
+	-1   0    0    1   
+$EndComp
+$Comp
+L HEADER_3 J8
+U 1 1 56C609D5
+P 1400 5750
+F 0 "J8" H 1400 5950 60  0000 C CNN
+F 1 "HEADER_3" H 1400 5550 60  0000 C CNN
+F 2 "Sockets_WAGO734:WAGO_734_3pin_Straight_RuggedPads" H 1400 5750 60  0001 C CNN
+F 3 "" H 1400 5750 60  0000 C CNN
+	1    1400 5750
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R16
+U 1 1 56C60A29
+P 1900 4700
+F 0 "R16" V 1980 4700 50  0000 C CNN
+F 1 "R" V 1900 4700 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 1830 4700 50  0001 C CNN
+F 3 "" H 1900 4700 50  0000 C CNN
+	1    1900 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L R R17
+U 1 1 56C60AA1
+P 1900 5650
+F 0 "R17" V 1980 5650 50  0000 C CNN
+F 1 "R" V 1900 5650 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 1830 5650 50  0001 C CNN
+F 3 "" H 1900 5650 50  0000 C CNN
+	1    1900 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR050
+U 1 1 56C60AFB
+P 1600 5000
+F 0 "#PWR050" H 1600 4750 50  0001 C CNN
+F 1 "GND" H 1600 4850 50  0000 C CNN
+F 2 "" H 1600 5000 50  0000 C CNN
+F 3 "" H 1600 5000 50  0000 C CNN
+	1    1600 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR051
+U 1 1 56C60B57
+P 1600 5950
+F 0 "#PWR051" H 1600 5700 50  0001 C CNN
+F 1 "GND" H 1600 5800 50  0000 C CNN
+F 2 "" H 1600 5950 50  0000 C CNN
+F 3 "" H 1600 5950 50  0000 C CNN
+	1    1600 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_DGS Q1
+U 1 1 56C60B95
+P 3150 6000
+F 0 "Q1" H 3450 6050 50  0000 R CNN
+F 1 "Q_NMOS_DGS" H 3800 5950 50  0000 R CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Molded_Narrow" H 3350 6100 50  0001 C CNN
+F 3 "" H 3150 6000 50  0000 C CNN
+	1    3150 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R18
+U 1 1 56C60BED
+P 2650 6000
+F 0 "R18" V 2730 6000 50  0000 C CNN
+F 1 "R" V 2650 6000 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 2580 6000 50  0001 C CNN
+F 3 "" H 2650 6000 50  0000 C CNN
+	1    2650 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L R R19
+U 1 1 56C60C63
+P 2850 6250
+F 0 "R19" V 2930 6250 50  0000 C CNN
+F 1 "R" V 2850 6250 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 2780 6250 50  0001 C CNN
+F 3 "" H 2850 6250 50  0000 C CNN
+	1    2850 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 5000 1600 4900
+Wire Wire Line
+	1600 4900 1500 4900
+Wire Wire Line
+	1600 5950 1600 5850
+Wire Wire Line
+	1600 5850 1500 5850
+Wire Wire Line
+	1500 5650 1750 5650
+Wire Wire Line
+	1500 4700 1750 4700
+$Comp
+L GND #PWR052
+U 1 1 56C60E69
+P 3250 6450
+F 0 "#PWR052" H 3250 6200 50  0001 C CNN
+F 1 "GND" H 3250 6300 50  0000 C CNN
+F 2 "" H 3250 6450 50  0000 C CNN
+F 3 "" H 3250 6450 50  0000 C CNN
+	1    3250 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR053
+U 1 1 56C60EAA
+P 2850 6450
+F 0 "#PWR053" H 2850 6200 50  0001 C CNN
+F 1 "GND" H 2850 6300 50  0000 C CNN
+F 2 "" H 2850 6450 50  0000 C CNN
+F 3 "" H 2850 6450 50  0000 C CNN
+	1    2850 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 6000 2800 6000
+Wire Wire Line
+	2850 6100 2850 6000
+Connection ~ 2850 6000
+Wire Wire Line
+	2850 6450 2850 6400
+Wire Wire Line
+	3250 6450 3250 6200
+Wire Wire Line
+	3250 5800 3250 4800
+Wire Wire Line
+	3250 4800 1500 4800
+Wire Wire Line
+	1500 5750 3250 5750
+Connection ~ 3250 5750
+Wire Wire Line
+	2050 4700 2150 4700
+Wire Wire Line
+	2050 5650 2150 5650
+Text Label 2150 4700 0    60   ~ 0
+PWM1out-1
+Text Label 2150 5650 0    60   ~ 0
+PWM2out-1
+Wire Wire Line
+	2400 6000 2500 6000
+Text Label 2400 6000 2    60   ~ 0
+On/Off-PWM
+Text HLabel 1250 1300 0    60   Input ~ 0
+On/Off-PWM
+Wire Wire Line
+	1250 1300 1450 1300
+Text Label 1450 1300 0    60   ~ 0
+On/Off-PWM
+Text HLabel 1250 1500 0    60   Input ~ 0
+PWM1in
+Text HLabel 1250 1600 0    60   Input ~ 0
+PWM2in
+Wire Wire Line
+	1250 1500 1450 1500
+Wire Wire Line
+	1250 1600 1450 1600
+Text Label 1450 1500 0    60   ~ 0
+PWM1in
+Text Label 1450 1600 0    60   ~ 0
+PWM2in
+$Comp
+L HEADER_3 J9
+U 1 1 56C6536E
+P 5900 5400
+F 0 "J9" H 5900 5600 60  0000 C CNN
+F 1 "HEADER_3" H 5900 5200 60  0000 C CNN
+F 2 "Sockets_WAGO734:WAGO_734_3pin_Straight_RuggedPads" H 5900 5400 60  0001 C CNN
+F 3 "" H 5900 5400 60  0000 C CNN
+	1    5900 5400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 5300 6400 5300
+Wire Wire Line
+	6000 5500 6850 5500
+Wire Wire Line
+	6000 5400 6650 5400
+Wire Wire Line
+	6650 5400 6650 5650
+$Comp
+L GND #PWR054
+U 1 1 56C655CA
+P 6650 5650
+F 0 "#PWR054" H 6650 5400 50  0001 C CNN
+F 1 "GND" H 6650 5500 50  0000 C CNN
+F 2 "" H 6650 5650 50  0000 C CNN
+F 3 "" H 6650 5650 50  0000 C CNN
+	1    6650 5650
+	1    0    0    -1  
+$EndComp
+Text Label 6300 5300 0    60   ~ 0
+A
+Text Label 6300 5500 0    60   ~ 0
+B
+$Comp
+L R R20
+U 1 1 56C65752
+P 6400 5150
+F 0 "R20" V 6480 5150 50  0000 C CNN
+F 1 "R" V 6400 5150 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 6330 5150 50  0001 C CNN
+F 3 "" H 6400 5150 50  0000 C CNN
+	1    6400 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R21
+U 1 1 56C657D9
+P 6850 5150
+F 0 "R21" V 6930 5150 50  0000 C CNN
+F 1 "R" V 6850 5150 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 6780 5150 50  0001 C CNN
+F 3 "" H 6850 5150 50  0000 C CNN
+	1    6850 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6850 5500 6850 5300
+Wire Wire Line
+	6400 5000 6400 4950
+Wire Wire Line
+	6850 5000 6850 4950
+Text Label 6850 4950 0    60   ~ 0
++3.3V
+Text Label 6400 4950 0    60   ~ 0
++3.3V
+Text HLabel 1250 1800 0    60   Output ~ 0
+ControlVolt_A
+Text HLabel 1250 1900 0    60   Output ~ 0
+ControlVolt_B
+Wire Wire Line
+	1250 1800 1450 1800
+Wire Wire Line
+	1250 1900 1450 1900
+Text Label 1450 1800 0    60   ~ 0
+A
+Text Label 1450 1900 0    60   ~ 0
+B
+$Comp
+L HEADER_2 J10
+U 1 1 56C666D4
+P 7500 5400
+F 0 "J10" H 7500 5550 60  0000 C CNN
+F 1 "HEADER_2" H 7500 5250 60  0000 C CNN
+F 2 "Sockets_WAGO734:WAGO_734_2pin_Straight_RuggedPads" H 7500 5400 60  0001 C CNN
+F 3 "" H 7500 5400 60  0000 C CNN
+	1    7500 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR055
+U 1 1 56C667D0
+P 7650 5650
+F 0 "#PWR055" H 7650 5400 50  0001 C CNN
+F 1 "GND" H 7650 5500 50  0000 C CNN
+F 2 "" H 7650 5650 50  0000 C CNN
+F 3 "" H 7650 5650 50  0000 C CNN
+	1    7650 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 5450 7650 5450
+Wire Wire Line
+	7650 5450 7650 5650
+$Comp
+L R R22
+U 1 1 56C66865
+P 8000 5150
+F 0 "R22" V 8080 5150 50  0000 C CNN
+F 1 "R" V 8000 5150 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM7mm" V 7930 5150 50  0001 C CNN
+F 3 "" H 8000 5150 50  0000 C CNN
+	1    8000 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C21
+U 1 1 56C668AE
+P 8000 5500
+F 0 "C21" H 8025 5600 50  0000 L CNN
+F 1 "C" H 8025 5400 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 8038 5350 50  0001 C CNN
+F 3 "" H 8000 5500 50  0000 C CNN
+	1    8000 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR056
+U 1 1 56C66918
+P 8000 5650
+F 0 "#PWR056" H 8000 5400 50  0001 C CNN
+F 1 "GND" H 8000 5500 50  0000 C CNN
+F 2 "" H 8000 5650 50  0000 C CNN
+F 3 "" H 8000 5650 50  0000 C CNN
+	1    8000 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 5350 8000 5350
+Wire Wire Line
+	8000 5350 8000 5300
+Connection ~ 8000 5350
+Wire Wire Line
+	8000 4950 8000 5000
+Text Label 8000 4950 0    60   ~ 0
++3.3V
+Text Label 8000 5350 0    60   ~ 0
+SelectX10/1
+Text HLabel 1250 2050 0    60   Output ~ 0
+Select_Volt
+Wire Wire Line
+	1250 2050 1450 2050
+Text Label 1450 2050 0    60   ~ 0
+SelectX10/1
+$Comp
+L GND #PWR057
+U 1 1 56CB2CC6
+P 7650 5650
+F 0 "#PWR057" H 7650 5400 50  0001 C CNN
+F 1 "GND" H 7650 5500 50  0000 C CNN
+F 2 "" H 7650 5650 50  0000 C CNN
+F 3 "" H 7650 5650 50  0000 C CNN
+	1    7650 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR058
+U 1 1 56CB2CDA
+P 8000 5650
+F 0 "#PWR058" H 8000 5400 50  0001 C CNN
+F 1 "GND" H 8000 5500 50  0000 C CNN
+F 2 "" H 8000 5650 50  0000 C CNN
+F 3 "" H 8000 5650 50  0000 C CNN
+	1    8000 5650
+	1    0    0    -1  
+$EndComp
+Text Label 8000 4950 0    60   ~ 0
++3.3V
+Text Label 8000 5350 0    60   ~ 0
+SelectX10/1
+Text HLabel 1250 2300 0    60   Input ~ 0
+lcd-rs
+Text HLabel 1250 2400 0    60   Input ~ 0
+lcd-en
+Text HLabel 1250 2500 0    60   Input ~ 0
+lcd1
+Text HLabel 1250 2600 0    60   Input ~ 0
+lcd2
+Text HLabel 1250 2700 0    60   Input ~ 0
+lcd3
+Text HLabel 1250 2800 0    60   Input ~ 0
+lcd4
+Wire Wire Line
+	1250 2300 1450 2300
+Wire Wire Line
+	1250 2400 1450 2400
+Wire Wire Line
+	1250 2500 1450 2500
+Wire Wire Line
+	1250 2600 1450 2600
+Wire Wire Line
+	1250 2700 1450 2700
+Wire Wire Line
+	1250 2800 1450 2800
+Text Label 1450 2300 0    60   ~ 0
+lcd-rs
+Text Label 1450 2400 0    60   ~ 0
+lcd-en
+Text Label 1450 2500 0    60   ~ 0
+lcd1
+Text Label 1450 2600 0    60   ~ 0
+lcd2
+Text Label 1450 2700 0    60   ~ 0
+lcd3
+Text Label 1450 2800 0    60   ~ 0
+lcd4
+Text Label 3200 2800 0    60   ~ 0
++5bV
+Text Label 3900 2800 0    60   ~ 0
++5bV
+Text Label 6950 2700 0    60   ~ 0
++5bV
+$Comp
+L C C24
+U 1 1 5730FB11
+P 2500 3350
+F 0 "C24" H 2525 3450 50  0000 L CNN
+F 1 "C" H 2525 3250 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 2538 3200 50  0001 C CNN
+F 3 "" H 2500 3350 50  0000 C CNN
+	1    2500 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR059
+U 1 1 5730FB76
+P 2500 3600
+F 0 "#PWR059" H 2500 3350 50  0001 C CNN
+F 1 "GND" H 2500 3450 50  0000 C CNN
+F 2 "" H 2500 3600 50  0000 C CNN
+F 3 "" H 2500 3600 50  0000 C CNN
+	1    2500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 3500 2500 3600
+Wire Wire Line
+	2500 3000 2500 3200
+Connection ~ 3200 3000
+$EndSCHEMATC
